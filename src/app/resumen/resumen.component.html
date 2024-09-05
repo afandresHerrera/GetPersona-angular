@@ -1,0 +1,16 @@
+<div class="container mt-4">
+  <h2>Resumen de Información</h2>
+  <div *ngIf="clientInfo">
+    <p *ngIf="clientInfo.error; else clientDetails">{{ clientInfo.error }}</p>
+    <ng-template #clientDetails>
+      <p><strong>Primer Nombre:</strong> {{clientInfo.primerNombre}}</p>
+      <p><strong>Segundo Nombre:</strong> {{clientInfo.segundoNombre}}</p>
+      <p><strong>Primer Apellido:</strong> {{clientInfo.primerApellido}}</p>
+      <p><strong>Segundo Apellido:</strong> {{clientInfo.segundoApellido}}</p>
+      <p><strong>Teléfono:</strong> {{clientInfo.telefono}}</p>
+      <p><strong>Dirección:</strong> {{clientInfo.direccion}}</p>
+      <p><strong>Ciudad:</strong> {{clientInfo.ciudad}}</p>
+    </ng-template>
+  </div>
+  <button class="btn btn-secondary mt-3" (click)="onVolver()">Volver</button>
+</div>
