@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { ClienteService } from '../cliente.service'; // Importar el servicio
+import { ClienteService } from '../../../shared/services/cliente.service'; // Importar el servicio
 
 @Component({
   selector: 'app-ingreso',

@@ -4,8 +4,8 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { IngresoComponent } from './ingreso/ingreso.component';
-import { ResumenComponent } from './resumen/resumen.component';
+import { IngresoComponent } from './pages/person/ingreso/ingreso.component';
+import { ResumenComponent } from './pages/person/resumen/resumen.component';
 
 @NgModule({
   declarations: [
